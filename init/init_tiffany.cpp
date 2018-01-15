@@ -26,6 +26,8 @@
  */
 
 #include <fcntl.h>
+#include <stdio.h>
+#include <unistd.h>
 #include <stdlib.h>
 #include <sys/sysinfo.h>
 
@@ -40,6 +42,15 @@ char const *heapsize;
 char const *heapminfree;
 char const *heapmaxfree;
 char const *large_cache_height;
+
+static void init_finger_print_properties()
+{
+	if (access("/persist/fpc/calibration_image.pndat", 0) == -1) {
+		property_set("ro.boot.fingerprint", "goodix");
+	} else {
+		property_set("ro.boot.fingerprint", "fpc");
+	}
+}
 
 static void init_alarm_boot_properties()
 {
