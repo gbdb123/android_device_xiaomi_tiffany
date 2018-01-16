@@ -50,7 +50,7 @@ TARGET_KERNEL_CONFIG := tiffany_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 #end
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel.gz
+#TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel.gz
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
