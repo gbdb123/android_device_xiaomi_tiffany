@@ -175,7 +175,6 @@ lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
 lib/libmm-qcamera.so
 lib/libMiCameraHal.so
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/libarcsoft_beautyshot_image_algorithm.so
 vendor/lib/libarcsoft_beauty_shot.so
 vendor/lib/libarcsoft_beautyshot.so
